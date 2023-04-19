@@ -62,6 +62,11 @@ body{
     justify-content: start;
     column-gap: 20px;
 }
+.recognition{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
 
 .header {
     grid-area: 1/2/2/3;
