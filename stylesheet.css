@@ -80,16 +80,28 @@ body{
     justify-self: stretch;
     border-radius: 15px;
 }
+
+.header-top-row div{
+    justify-self: start;
+    align-self: center;
+}
+
 .header-bottom-row {
     display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
     grid-auto-flow: column;
     align-items: center;
 }
 
+
 .header-bottom-row img {
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
+.header-bottom-row div {
+    justify-content: start;
+
+}
 .header-bottom-row button {
     border-radius: 15px;
     width: 50%;
@@ -101,14 +113,47 @@ body{
     background-color: lightgray;
     display: grid;
     grid-template-columns: 3fr 1fr;
- 
 }
 
-.projects{
+.projects {
     display: grid;
+    margin: 30px;
+    grid-template-rows: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-heading{
+    font-size: 16px;
+    font-weight: bold;
+    border: solid black;
+    padding: 10px;
+    display: grid;
+}
+
+.icons{
+    display: grid;
+    justify-content: end;
+    grid-auto-flow: column;
+    gap: 5px;
+}
+.project-text{
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .content-right-side{
     display: grid;
     grid-template-rows: 1fr 1fr;
+    margin: 30px;
 }
